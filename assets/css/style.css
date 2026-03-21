@@ -1,27 +1,131 @@
-.title {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.title img {
-    width: 80px;
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+        Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: #1f2328;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d0d7de;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 60px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.logo-area img {
+    width: 36px;
     height: auto;
 }
 
-.text-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.title h1 {
+.logo-text h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2328;
     margin: 0;
-    font-size: 32px;
+    line-height: 1.3;
 }
 
-.title h3 {
-    margin: 5px 0 0 0;
-    font-size: 16px;
-    color: #666;
+.logo-text h3 {
+    font-size: 11px;
+    color: #656d76;
+    font-weight: normal;
+    margin: 2px 0 0 0;
+    letter-spacing: 0.3px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 8px 12px;
+    color: #1f2328;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s;
+    border-radius: 6px;
+}
+
+.nav-menu li a:hover {
+    background-color: #f0f2f5;
+    color: #0969da;
+}
+
+.nav-menu li a.active {
+    font-weight: 600;
+    color: #0969da;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 16px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo-area {
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .logo-area img {
+        width: 32px;
+    }
+
+    .logo-text h1 {
+        font-size: 16px;
+    }
+
+    .logo-text h3 {
+        font-size: 10px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        flex-direction: column;
+        gap: 2px;
+        padding-bottom: 12px;
+    }
+
+    .nav-menu li a {
+        text-align: center;
+        padding: 10px 12px;
+    }
 }
