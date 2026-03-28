@@ -196,12 +196,6 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .logo-text h3 {
-        display: none;
-    }
-}
-
 .footer {
     margin-top: auto;
     background-color: #ffffff;
