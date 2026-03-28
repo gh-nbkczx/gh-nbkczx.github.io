@@ -1,41 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>宁波科创中学</title>
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
     <div class="navbar">
         <div class="nav-container">
-            <!-- 左侧：校徽和校名 -->
+            <!-- 左侧标题 -->
             <div class="logo-area">
-                <img src="assets/images/icon.png" alt="宁波科创中学的校徽">
+                <img src="assets/images/icon.png" alt="校徽">
                 <div class="logo-text">
                     <h1>宁波科创中学</h1>
                     <h3>Ningbo Science And Innovation High School</h3>
                 </div>
             </div>
 
-            <!-- 右侧：导航菜单 -->
-            <ul class="nav-menu">
-                <li><a href="index.html">网站首页</a></li>
-                <li><a href="">学校概况</a></li>
-                <li><a href="">新闻中心</a></li>
-                <li><a href="">教学教研</a></li>
-                <li><a href="">招生专栏</a></li>
-                <li><a href="">联系我们</a></li>
-                <li><a href="" id="easter-egg">彩蛋?</a></li>
+            <!-- 汉堡菜单 -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 导航菜单 -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">学校概况</a></li>
+                <li><a href="#">新闻中心</a></li>
+                <li><a href="#">教学教研</a></li>
+                <li><a href="#">招生专栏</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
         </div>
     </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                © 2026 宁波科创中学 | 地址：宁波市鄞州区邱隘镇潘火路 900 号
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/gh-nbkczx/gh-nbkczx.github.io/" target="_blank">开源链接(GitHub)</a>
+                <a href="https://github.com/gh-nbkczx" target="_blank">制作团队</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
 </body>
